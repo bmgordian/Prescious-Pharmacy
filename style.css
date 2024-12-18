@@ -1,0 +1,241 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contact-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.contact-info input, .language-select {
+  
+  border: none;
+  background-color: #ddd;
+  padding: 12px;
+
+  border-radius: 23px;
+}
+
+.language-select {
+  cursor: pointer;
+}
+
+/* Navigation Menu */
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+
+.nav-link.active {
+  color: #F2A900;
+  border-bottom: 3px solid #F2A900;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+  position: relative; /* Allows positioning children relative to this container */
+  height: 500px; /* Adjust the height based on your design */
+  background-image: url('images/c1fe4fd6077a589a52991bc327b83e05.jpeg'); /* Path to your image */
+  background-size: cover; /* Make the image cover the entire container */
+  background-position: center; /* Center the image */
+  color: white; /* Text color */
+  display: flex; /* Use flexbox to center content */
+  align-items: center; /* Center vertically */
+  justify-content: flex-start; /* Align text to the left */
+  padding: 0 40px; /* Add horizontal padding */
+}
+
+/* Hero Content */
+.hero-content {
+  max-width: 500px; /* Limit the width of the text for better readability */
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.hero-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-arrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hero-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 20px;
+}
+
+.services h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.services-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  width: 234px;
+  height: 224px;
+  top: 1026px;
+  left: 163;
+}
+
+.service-card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Appointment Section */
+.appointment-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #A0C539; /* Green background */
+  padding: 30px;
+  color: white;
+}
+
+.appointment-info {
+  width: 50%;
+}
+
+.appointment-info h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.features {
+  margin-top: 20px;
+}
+
+.feature {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.feature img {
+  width: 40px;
+  height: 40px;
+}
+
+.feature h4 {
+  margin-bottom: 5px;
+}
+
+/* Form Styling */
+.appointment-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 40%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input, select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #F2994A; /* Orange button */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e2872e;
+}
+
+
