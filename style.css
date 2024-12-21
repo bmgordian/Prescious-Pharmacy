@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,13 +11,14 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
+
 .header {
   display: flex;
   align-items: center;
   padding: 40px 80px;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
+  justify-content: space-between;
 }
 
 .logo-text {
@@ -30,10 +31,9 @@ body {
 }
 
 .divider {
-  width: 2px; /* Thickness of the line */
-  height: 80px; /* Height of the line */
-  background-color: #ccc; /* Line color */
-  margin: 0 10px; /* Space between the line and the divs */
+  width: 2px; 
+  height: 80px; 
+  background-color: #ccc;
 }
 
 .contact-info {
@@ -43,24 +43,67 @@ body {
   align-items: center;
   justify-content:right;
   align-items: center;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.icon {
+  padding: 10px;
+  min-width: 40px;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .input-group {
+    width: 90%; 
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    width: 100px; 
+  }
 
 }
 
+
+.phone {
+  padding-bottom: 17px;
+}
+
 .contact-info input, .language-select {
-  
   border: none;
   background-color: #ddd;
-  padding: 12px;
+  padding: 16px;
   margin-left: 2rem;
   justify-content: space-between;
   align-items: center;
-
   border-radius: 23px;
+  background-color: rgba(239, 239, 239, 1);
 }
 
 .language-select {
   cursor: pointer;
   margin-left: 8px;
+  padding-right: 25px;
+  background-color: rgba(239, 239, 239, 1);
 }
 
 /* Navigation Menu */
@@ -81,29 +124,32 @@ body {
   padding: 5px 10px;
 }
 
-.nav-link.active {
-  color: #F2A900;
-  border-bottom: 3px solid #F2A900;
+.nav-link:hover {
+  color: #e2872e;
+
 }
 
-/* Hero Section */
-/* Hero Section */
 .hero {
-  position: relative; /* Allows positioning children relative to this container */
-  height: 500px; /* Adjust the height based on your design */
-  background-image: url('images/c1fe4fd6077a589a52991bc327b83e05.jpeg'); /* Path to your image */
-  background-size: cover; /* Make the image cover the entire container */
-  background-position: center; /* Center the image */
-  color: white; /* Text color */
-  display: flex; /* Use flexbox to center content */
-  align-items: center; /* Center vertically */
-  justify-content: flex-start; /* Align text to the left */
-  padding: 0 40px; /* Add horizontal padding */
+  position: relative; 
+  height: 500px; 
+  background-image: url('images/c1fe4fd6077a589a52991bc327b83e05.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  color: white; 
+  display: flex; 
+  align-items: center;
+  justify-content: flex-start; 
+  padding: 0 40px; 
+}
+
+img {
+  max-width: 100%; 
+  height: auto; 
 }
 
 /* Hero Content */
 .hero-content {
-  max-width: 500px; /* Limit the width of the text for better readability */
+  max-width: 500px; 
 }
 
 .hero-content h1 {
@@ -213,6 +259,10 @@ body {
   height: 40px;
 }
 
+.features img {
+  border-radius: 50%;
+}
+
 .feature h4 {
   margin-bottom: 5px;
 }
@@ -318,7 +368,7 @@ button:hover {
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 0px;
   cursor: pointer;
   margin-top: 20px;
 }
@@ -346,7 +396,7 @@ button:hover {
 .subscribe-form {
   display: flex;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 0;
   overflow: hidden;
 }
 
@@ -455,26 +505,36 @@ button:hover {
   display: flex;
   justify-content: center;
   max-width: 600px;
+  width: 616px;
+  height: 68px;
   margin: 0 auto;
+  position: relative;
 }
 
 .subscribe-input {
   flex: 1;
   padding: 10px;
   border: none;
-  border-radius: 5px 0 0 5px;
   outline: none;
   font-size: 1rem;
+  background-color: rgb(233, 230, 230)(233, 225, 225);
+  margin-bottom: 0;
+  
 }
 
 .subscribe-button {
   background-color: #F2994A;
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 0 5px 5px 0;
+  padding: 20px 40px;
+  border-radius: 0;
   font-weight: bold;
   cursor: pointer;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  width: 167px;
+  height: 62px;
 }
 
 .subscribe-button:hover {
