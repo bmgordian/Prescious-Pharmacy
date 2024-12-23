@@ -602,3 +602,190 @@ button:hover {
 .social-icons a:hover {
   color: #F2994A;
 }
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  /* Header */
+  .header {
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .logo-text {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .logo-text img {
+    width: 150px;
+    height: auto;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+    gap: 10px;
+  }
+
+  .contact-info input,
+  .language-select {
+    margin-left: 0;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Navigation */
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  /* Hero Section */
+  .hero {
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  /* Services Section */
+  .services-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Appointment Section */
+  .appointment-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .appointment-info {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .appointment-form {
+    width: 100%;
+  }
+
+  .feature {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  /* Latest News Section */
+  .news-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Partners Logos Section */
+  .logos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .logos-container img {
+    margin: 10px 0;
+  }
+
+  /* Subscribe Section */
+  .subscribe-form {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .subscribe-input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+  }
+
+  .subscribe-button {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-left {
+    text-align: center;
+  }
+
+  .footer-links ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+/* Additional breakpoint for very small devices */
+@media screen and (max-width: 320px) {
+  .hero-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .service-card,
+  .news-card {
+    width: 100%;
+  }
+}
